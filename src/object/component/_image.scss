@@ -1,0 +1,12 @@
+@use "../../foundation/variables";
+
+@mixin image() {
+  .c-image {
+    width: 100vw;
+    object-fit: cover;
+  }
+  .c-image__circle {
+    border: solid variables.$white-color 3px;
+    border-radius: 50%;
+  }
+}

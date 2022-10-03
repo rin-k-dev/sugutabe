@@ -1,0 +1,5 @@
+@use 'swiper';
+
+@mixin library() {
+    @include swiper.swiper();
+}

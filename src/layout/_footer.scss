@@ -1,0 +1,9 @@
+@use "../foundation/variables";
+
+@mixin footer() {
+    .l-footer {
+        min-width: 375px;
+        height: 60px;
+        background-color: variables.$background-color-1;
+    }
+}

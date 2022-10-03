@@ -1,0 +1,213 @@
+@use "../../foundation/variables";
+
+@mixin fonts() {
+  .u-Harenosora-24 {
+    font-family: Harenosora, serif;
+    font-weight: normal;
+    font-size: 2.4rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        24px,
+        calc(100vw * 48 / #{variables.$width-origin-pc}),
+        48px
+      );
+    }
+  }
+  .u-Harenosora-24-normal {
+    font-family: Harenosora, serif;
+    font-weight: normal;
+    font-size: 2.4rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        18px,
+        calc(100vw * 24 / #{variables.$width-origin-pc}),
+        24px
+      );
+    }
+  }
+  .u-Harenosora-27 {
+    font-family: Harenosora, serif;
+    font-weight: normal;
+    font-size: 2.7rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: 5.6rem;
+    }
+  }
+
+  .u-Harenosora-32 {
+    font-family: Harenosora, serif;
+    font-weight: normal;
+    font-size: 3.2rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        32px,
+        calc(100vw * 72 / #{variables.$width-origin-pc}),
+        72px
+      );
+    }
+  }
+  .u-NoteSansJP-8-16 {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: normal;
+    font-size: 0.8rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        16px,
+        calc(100vw * 16 / #{variables.$width-origin-pc}),
+        16px
+      );
+    }
+  }
+  .u-NoteSansJP-12-16 {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        12px,
+        calc(100vw * 16 / #{variables.$width-origin-pc}),
+        12px
+      );
+    }
+  }
+  .u-NoteSansJP-14-16 {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        14px,
+        calc(100vw * 16 / #{variables.$width-origin-pc}),
+        16px
+      );
+    }
+  }
+  .u-NoteSansJP-16 {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: normal;
+    font-size: 1.6rem;
+    font-size: clamp(
+      16px,
+      calc(100vw * 16 / #{variables.$width-origin-pc}),
+      16px
+    );
+  }
+  .u-NoteSansJP-16-18-normal {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: normal;
+    font-size: 1.6rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        16px,
+        calc(100vw * 18 / #{variables.$width-origin-pc}),
+        18px
+      );
+    }
+  }
+  .u-NoteSansJP-16-24-normal {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: normal;
+    font-size: 1.6rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        16px,
+        calc(100vw * 24 / #{variables.$width-origin-pc}),
+        24px
+      );
+    }
+  }
+  .u-NoteSansJP-16-24-bold {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        16px,
+        calc(100vw * 24 / #{variables.$width-origin-pc}),
+        24px
+      );
+    }
+  }
+  .u-NoteSansJP-16-normal {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: normal;
+    font-size: 1.6rem;
+  }
+  .u-NoteSansJP-18 {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        18px,
+        calc(100vw * 24 / #{variables.$width-origin-pc}),
+        32px
+      );
+    }
+  }
+  .u-NoteSansJP-18-16-bold {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        16px,
+        calc(100vw * 16 / #{variables.$width-origin-pc}),
+        16px
+      );
+    }
+  }
+  .u-NoteSansJP-18-24-normal {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        18px,
+        calc(100vw * 24 / #{variables.$width-origin-pc}),
+        24px
+      );
+    }
+  }
+  .u-NoteSansJP-18-24-bold {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        18px,
+        calc(100vw * 24 / #{variables.$width-origin-pc}),
+        24px
+      );
+    }
+  }
+  .u-NoteSansJP-24 {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: normal;
+    font-size: 2.4rem;
+  }
+  .u-NoteSansJP-24-48-bold {
+    font-family: NoteSansJP, serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        24px,
+        calc(100vw * 48 / #{variables.$width-origin-pc}),
+        48px
+      );
+    }
+  }
+  .u-NoteSansJP-32 {
+    font-family: NoteSansJP, sans-serif;
+    font-weight: normal;
+    font-size: 3.2rem;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      font-size: clamp(
+        32px,
+        calc(100vw * 42 / #{variables.$width-origin-pc}),
+        42px
+      );
+    }
+  }
+}

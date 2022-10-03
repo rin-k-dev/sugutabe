@@ -1,0 +1,11 @@
+@use 'image';
+@use 'attention';
+@use 'button';
+@use 'circle';
+
+@mixin component() {
+    @include image.image();
+    @include attention.attention();
+    @include button.button();
+    @include circle.circle();
+}

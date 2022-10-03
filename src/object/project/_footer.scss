@@ -1,0 +1,18 @@
+@use "../../foundation/variables";
+
+@mixin footer() {
+    .p-footer {
+        p {
+            font-size: 1.4rem;
+            text-align: center;
+            padding-top: 30px;
+        }
+    }
+    @media screen and (min-width: #{variables.$break-point}px) {
+        .p-footer {
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

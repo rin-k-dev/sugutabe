@@ -1,0 +1,27 @@
+@use '../../foundation/variables';
+
+@mixin circle-base {
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    color: variables.$white-color;
+}
+
+@mixin circle() {
+    .c-circle__1 {
+        @include circle-base;
+        background-color: variables.$number1-color;
+    }
+    .c-circle__2 {
+        @include circle-base;
+        background-color: variables.$number2-color;
+    }
+    .c-circle__3 {
+        @include circle-base;
+        background-color: variables.$number3-color;
+    }
+
+}

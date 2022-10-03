@@ -1,0 +1,38 @@
+@use "../../foundation/variables";
+
+@mixin color() {
+  .u-white {
+    color: variables.$white-color;
+  }
+
+  .u-orange {
+    color: variables.$main-visual-color-1;
+  }
+  .u-green {
+    color: variables.$main-visual-color-2;
+  }
+  .u-yellow {
+    color: variables.$main-visual-color-3;
+  }
+  .u-brown {
+    color: variables.$brown-color;
+  }
+  .u-red {
+    color: variables.$hamburger-menu-color;
+  }
+  .u-strong-red {
+    color: variables.$text-strong-red;
+  }
+  .u-number1-color {
+    color: variables.$number1-color;
+  }
+  .u-number2-color {
+    color: variables.$number2-color;
+  }
+  .u-number3-color {
+    color: variables.$number2-color;
+  }
+  .u-title-green-color {
+    color: variables.$title-green-color;
+  }
+}

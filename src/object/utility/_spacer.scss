@@ -1,0 +1,21 @@
+@use "../../foundation/variables";
+
+@mixin spacer() {
+    .u-spacer__bottom {
+        padding-bottom: 30px;
+    }
+    @media screen and (min-width: #{variables.$break-point}px) {
+        .u-spacer__bottom {
+            padding-bottom: 60px;
+        }
+    }
+    .u-spacer__top {
+        padding-top: 30px;
+    }
+    @media screen and (min-width: #{variables.$break-point}px) {
+        .u-spacer__top {
+            padding-top: 60px;
+        }
+    }
+
+}

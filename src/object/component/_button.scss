@@ -1,0 +1,17 @@
+@use "../../foundation/variables";
+
+@mixin button() {
+  .c-button__trial {
+    color: variables.$white-color;
+    width: 345px;
+    height: 80px;
+    border-radius: 40px;
+    background: linear-gradient(
+      82deg,
+      #52a530 0%,
+      #4cce17 100%,
+      #295318 100%,
+      #000 100%
+    );
+  }
+}

@@ -1,0 +1,11 @@
+@use 'display';
+@use 'spacer';
+@use 'color';
+@use 'fonts';
+
+@mixin utility() {
+    @include fonts.fonts();
+    @include display.display();
+    @include spacer.spacer();
+    @include color.color();
+}

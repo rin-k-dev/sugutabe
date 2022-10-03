@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="robots" content="noindex" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" >
+    <link rel="stylesheet" href="css/app.css" >
+    <title>スグ食べ</title>
+  </head>
+  <body>
+    <header class="l-header">
+      <div class="p-header">
+        <div class="p-header__logo">
+          <a href="index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="101.408"
+              height="30"
+              viewBox="0 0 101.408 30"
+            >
+              <image
+                id="logo"
+                width="101.408"
+                height="30"
+                xlink:href="data:image/png;base64,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"
+              ></image>
+            </svg>
+          </a>
+        </div>
+        <div class="l-nav u-sponly">
+          <nav class="p-nav">
+            <ul>
+              <li>
+                <a href="#"
+                  ><span>スグ食べとは / ABOUT</span
+                  ><img src="images/menu-arrow.png" alt="arrow"
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>お試し野菜 / TRIAL</span
+                  ><img src="images/menu-arrow.png" alt="arrow"
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>契約農家 / FARMERS</span
+                  ><img src="images/menu-arrow.png" alt="arrow"
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>お客様の声 / VOICE</span
+                  ><img src="images/menu-arrow.png" alt="arrow"
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="p-hamburger u-sponly">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="p-menu">メニュー</span>
+          <span class="p-close">閉じる</span>
+        </button>
+        <div class="l-pcnav u-pconly">
+          <nav class="p-pcnav">
+            <ul>
+              <li>
+                <a href="#"
+                  ><span class="p-text__strong-color">スグ食べとは</span
+                  ><span>ABOUT</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="p-text__strong-color">お試し野菜</span
+                  ><span>TRIAL</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="p-text__strong-color">契約農家</span
+                  ><span>FARMERS</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="p-text__strong-color">お客様の声</span
+                  ><span>VOICE</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="p-main__key--visual">
+        <h1 class="p-main__h1 u-Harenosora-24">
+          こだわり農家の<br ><span class="u-orange u-Harenosora-32"
+            >朝どり</span
+          ><span class="u-green u-Harenosora-32">オーガニック野菜</span
+          ><br class="u-sponly" >をご自宅で
+        </h1>
+        <picture>
+          <source srcset="images/farm_pc.png" media="(min-width:960px)" >
+          <img src="images/farm.png" alt="農場" class="c-image p-img__farm" >
+        </picture>
+        <h2 class="p-main__h2 u-NoteSansJP-18 u-white">
+          最短<span class="u-yellow u-NoteSansJP-32">24</span>時間で届く<br
+            class="u-sponly"
+          >オーガニック野菜宅配サービス
+        </h2>
+        <picture>
+          <source srcset="images/vegetable_pc.png" media="(min-width:960px)" >
+          <img
+            src="images/vegetable.png"
+            alt="野菜"
+            class="p-img__vegetable c-image c-image__circle"
+          >
+        </picture>
+      </section>
+      <section class="p-section__about">
+        <h1>スグ食べとは</h1>
+        <div class="l-sectioin__about u-spacer__top">
+          <p class="u-NoteSansJP-16-24-normal">
+            「スグ食べ」は、<span class="u-green"
+              >厳選したオーガニック農家さんの穫れたて野菜</span
+            >を販売しています。<br class="u-pconly" >
+            <span class="u-green">食材から選べる</span>のはもちろん、<span
+              class="u-green"
+              >生産者からも選べます</span
+            >。
+          </p>
+          <p class="u-NoteSansJP-16-24-normal">
+            生産方法や生産地、それぞれ異なるこだわりで、お気に入りの農家さんを見つけてください。<br
+              class="u-pconly"
+            >最短で24時間以内に届く新鮮なオーガニック野菜宅配サービスです。
+          </p>
+          <div class="c-attention">
+            <p>初回限定</p>
+            <button class="c-button__trial u-NoteSansJP-24">
+              お試しセットを注文
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="p-section__reason">
+        <div class="l-section__reason">
+          <h2 class="u-Harenosora-24">
+            <span class="u-strong-red">スグ食べ</span>が選ばれる<span
+              class="u-title-green-color u-Harenosora-27"
+              >3</span
+            >つの理由
+          </h2>
+          <div class="l-reasons">
+            <div class="l-reason">
+              <div class="l-circle">
+                <div class="u-Harenosora-24-normal c-circle__1">1</div>
+              </div>
+              <h3 class="u-Harenosora-24-normal">
+                本当の意味での<span class="u-strong-red">産地直送</span>
+              </h3>
+              <div class="u-NoteSansJP-16-normal l-reason__description">
+                <span class="u-strong-red"
+                  >「なるべく収穫したばかりの状態で、野菜を味わって欲しい。」</span
+                >スグ食べでは、既存の産地直送サービスのように箱詰め用の倉庫を介すことはありません。農家が<span
+                  class="u-strong-red"
+                  >収穫したその日に、お客様の元へ直送で野菜をお送りします。</span
+                >
+              </div>
+            </div>
+            <div class="l-reason">
+              <div class="l-circle">
+                <div class="u-Harenosora-24-normal c-circle__2">2</div>
+              </div>
+              <h3 class="u-Harenosora-24-normal">
+                安心安全な<span class="u-strong-red">無農薬野菜</span>
+              </h3>
+              <div class="u-NoteSansJP-16-normal l-reason__description">
+                出品している生産者は、有機栽培もしくは自然栽培の農家のみ。<span
+                  class="u-strong-red"
+                  >全ての商品が無農薬・無化学肥料など、安全にこだわって生産された「オーガニック農作物」</span
+                >です。そのため、どの商品も安心してお買い求めいただけます。
+              </div>
+            </div>
+            <div class="l-reason">
+              <div class="l-circle">
+                <div class="u-Harenosora-24-normal c-circle__3">3</div>
+              </div>
+              <h3 class="u-Harenosora-24-normal">
+                たくさんの<span class="u-strong-red">旬な野菜との出会い</span>
+              </h3>
+              <div class="u-NoteSansJP-16-normal l-reason__description">
+                年間数十種の野菜を作る生産者から、<span class="u-strong-red"
+                  >今が旬の多様な野菜</span
+                >が届きます。スグ食べでは<span class="u-strong-red"
+                  >生産者ごとに商品が異なります</span
+                >。中には年間100種類もの多品種生産をしている生産者も。旬な野菜はもちろん、<span
+                  class="u-strong-red"
+                  >珍しい野菜</span
+                >とも出会えます。
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-section__trial">
+        <div class="l-section__trial">
+          <div class="l-section__trial--atention">
+            <span class="u-yellow">自信があるから、是非食べてもらいたい</span>
+          </div>
+          <h2 class="u-NoteSansJP-24-48-bold">１回限り！少量お試しセット</h2>
+          <div class="p-vegetables">
+            <div class="l-vegetables">
+              <div class="l-vegetable">          
+                <h3 class="u-NoteSansJP-16-24-bold p-vegetables__h3">
+                  【ベジックス】旬＊お試し野菜セット(6品目)
+                </h3>
+                <div class="l-vegetables__description">
+                  <span class="u-NoteSansJP-18-24-bold">￥1,280</span
+                  ><span class="u-NoteSansJP-12-16"
+                    >（税込 / 送料別）<br
+                  ></span>
+                  <span class="u-NoteSansJP-12-16"
+                    >生産者：千葉県松戸市　ベジックス</span
+                  >
+                </div>
+                  <picture>
+                    <source srcset="images/vegetable1_pc.png" media="(min-width: 960px)">
+                    <img
+                    src="images/vegetable1.png"
+                    alt="野菜1"
+                    class="c-image p-vegetable__img"
+                  >
+                  </picture>
+
+              </div>
+              <div class="l-vegetable">          
+                <h3 class="u-NoteSansJP-16-24-bold p-vegetables__h3">
+                  【くちぶえ農園】旬＊お試し野菜セット(6品目)
+                </h3>
+                <div class="l-vegetables__description">
+                  <span class="u-NoteSansJP-18-24-bold">￥1,280</span
+                  ><span class="u-NoteSansJP-12-16"
+                    >（税込 / 送料別）<br
+                  ></span>
+                  <span class="u-NoteSansJP-12-16"
+                    >生産者：長野県 飯田市　くちぶえ農園</span
+                  >
+                </div>
+                <picture>
+                  <source srcset="images/vegetable2_pc.png" media="(min-width: 960px)">
+                  <img
+                  src="images/vegetable2.png"
+                  alt="野菜2"
+                  class="c-image p-vegetable__img"
+                >
+                </picture>
+              </div>
+          </div>
+          <div class="c-attention">
+            <p>初回限定</p>
+            <button class="c-button__trial u-NoteSansJP-24">
+              お試しセットを注文
+            </button>
+          </div>
+        </div>
+		  </div>	
+      </section>
+      <section class="p-section__quality">
+        <div class="l-section__quality">
+          <h2 class="u-green u-NoteSansJP-24-48-bold">スグ食べの品質保証</h2>
+          <h3 class="u-green u-NoteSansJP-18-24-normal">商品に不備があった際には、<br class="u-sponly">スグ食べが “全額” 返金対応します</h3>
+          <div class="p-paragraph__quality">
+            <p class="u-NoteSansJP-16">
+              スグ食べに出品している農家さんたちは、<br>「<span class="u-strong-red">大切に育てた自慢の農作物を、できるだけ美味しい状態で食べてもらいたい。</span>」そんな想いを持った農家さんばかりです。<br>
+              そのため、収穫から梱包・出荷にいたるまでしっかりと品質管理されています。<br>
+              とはいえ、実物を見ずに野菜や果物を購入するのはちょっと不安…<br>
+              そんな方にも安心してご購入いただけるよう、スグ食べでは<span class="u-strong-red">品質保証をお約束</span>しています。<br>
+              万が一届いた商品に不備があった際には、スグ食べにて<span class="u-strong-red">全額返金対応いたします</span>。
+            </p>
+          </div>
+          <div class="p-section__quality--picture">
+            <picture>
+              <source srcset="images/quality_pc.png" media="(min-width: 960px)">
+              <img src="images/quality.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="p-section__organicfarmer">
+        <div class="l-section__organicfarmer">
+          <h2 class="u-brown u-NoteSansJP-18-16-bold">実はまだまだこんなに少ない、 <br class="u-sponly">日本のオーガニック農家</h2>
+          <h3 class="u-brown u-NoteSansJP-24-48-bold">オーガニック農家は、 <br class="u-sponly">国内全体の約0.5&#37;</h3>
+          <div class="p-paragraph__organicfarmer">
+            <p>最近はレストランなどでもよく目にするので もっとたくさんあるかと思いきや、 実はオーガニック農家は<span class="u-strong-red">国内農家の0.5&#37;しか 存在していません</span>。 <br>
+              でもその0.5&#37;のオーガニック農家は、<span class="u-strong-red">健やかな野菜を安心して食べてもらいたい</span>という強い 気持ちで大切に野菜を作っています。 <br>
+              スグ食べでは、そんな<span class="u-strong-red">農家さんを厳選</span>し、出品していただいています。 <br>
+              <span class="u-strong-red">農家さんによって栽培方法も違います</span>。<br> 自分や家族の体を作る礎となる<span class="u-strong-red">野菜の栽培方法</span>、この際把握してみては？
+            </p>
+          </div>
+          <h2 class="u-brown u-NoteSansJP-18-24-bold">きちんと知っておきたい、 <br class="u-sponly">栽培方法による違い</h2>
+          <div class="p-figure__plantcultivationmethod">
+            <div class="p-figure__items">
+              <figure class="p-figure__1">
+                <div class="p-figure__img">
+                  <img src="images/plant_cultivation_method1.png" alt="自然栽培,第三者機関認証ナシ">
+                </div>
+                <figcaption class="u-NoteSansJP-8-16">農薬・肥料・堆肥など<br>一切使用しません</figcaption>
+              </figure>
+              <figure class="p-figure__2-3">
+                <div class="p-figure__img">
+                  <img src="images/plant_cultivation_method2.png" alt="有機栽培,第三者機関認証アリ">
+                  <img src="images/plant_cultivation_method3.png" alt="無農薬栽培,第三者機関認証ナシ">
+                </div>
+                <figcaption class="u-NoteSansJP-8-16">有機の農薬・肥料・堆肥だけを使用しています</figcaption>
+              </figure>
+            </div>
+            <div class="p-figure__items">
+              <figure class="p-figure__4-5">
+                <div class="p-figure__img">
+                  <img src="images/plant_cultivation_method4.png" alt="特別栽培,第三者機関認証アリ">
+                  <img src="images/plant_cultivation_method5.png" alt="減農薬栽培,第三者機関認証ナシ">
+                </div>
+                <figcaption class="u-NoteSansJP-8-16">化学農薬・肥料・堆肥も使用しますが、<br>基準量の50&#37;以下だけ</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-section__farmers">
+        <div class="l-section__farmers">
+          <div class="p-contents__farmers">
+            <h2 class="u-brown u-NoteSansJP-14-16">こんな農家さんが登録しています</h2>
+            <h3 class="u-brown u-NoteSansJP-24-48-bold">私たちの野菜、 <br class="u-sponly">こんなにおいしいんです</h3>
+            <div class="p-descriptions__farmers">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="p-slide__farmer1">
+                      <div class="l-description__farmer">
+                        <div class="l-description__h4">
+                          <h4 class="u-NoteSansJP-18-24-bold">安心安全なお野菜を、ご堪能ください</h4>
+                        </div>
+                        <div class="l-description__h5">
+                          <h5 class="u-NoteSansJP-14-16">ひだまり農場（岡山県）山田洋一</h5>
+                        </div>
+                        <div class="l-description__p">
+                          <p class="u-NoteSansJP-14-16">「ひだまり農場」では栽培期間中に農薬・化学肥料を一切使用せず、年間約100種類の野菜と米、卵を生産 しています。堆肥・肥料もすべて手作りし、有機質のものを使用しています。</p>
+                        </div>
+                        <div class="p-picutere__farmer">
+                          <div class="l-description__picture">
+                            <picture>
+                              <source srcset="images/farmer1_pc.png" media="(min-width: 960px)">
+                              <img src="images/farmer1.png" alt="ひだまり農場（岡山県）山田洋一">
+                            </picture>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="p-slide__farmer2">
+                      <div class="l-description__farmer">
+                        <div class="l-description__h4">
+                          <h4 class="u-NoteSansJP-18-24-bold">旬なお野菜を存分に楽しんでください</h4>
+                        </div>
+                        <div class="l-description__h5">
+                          <h5 class="u-NoteSansJP-14-16">爽緑農園（福井県） 太田紘一</h5>
+                        </div>
+                        <div class="l-description__p">
+                          <p class="u-NoteSansJP-14-16">「爽緑農園」では農薬や除草剤は一切使用せず、一つ一つのお野菜を丁寧に栽培しています。お日様の光をたくさん浴びて育ったお野菜は、葉や皮まで余すことなく食べることができます。</p>
+                        </div>
+                        <div class="p-picutere__farmer">
+                          <div class="l-description__picture">
+                            <picture>
+                              <source srcset="images/farmer2_pc.png" media="(min-width: 960px)">
+                              <img src="images/farmer2.png" alt="爽緑農園（福井県） 太田紘一">
+                            </picture>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination u-sponly"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-section__voice">
+        <div class="l-section__voice">
+          <div class="l-section__voice--h2">
+            <h2 class="u-brown u-NoteSansJP-14-16">おかげさまで感謝のお声をいただいています</h2>
+          </div>
+          <div class="l-section__voice--h3">
+            <h3 class="u-brown u-NoteSansJP-24-48-bold">食べてわかった、この違い。</h3>
+          </div>
+          <div class="p-vwrapper__voices">
+            <div class="l-wrapper__voices">
+              <div class="p-images__voice">
+                <figure>
+                  <div class="l-figure__voice--img">
+                    <img src="images/voice1.png" alt="香りまで美味しい、新鮮さ">
+                  </div>
+                  <div class="l-figure__voice--h4">
+                    <h4 class="u-NoteSansJP-18-24-bold">香りまで美味しい、新鮮さ</h4>
+                  </div>
+                  <div class="l-figure__voice--h5">
+                    <h5 class="u-NoteSansJP-16-18-normal">神奈川県A様</h5>
+                  </div>
+                  <figcaption class="u-NoteSansJP-16">
+                    箱を開けた途端に広がった野菜の香り。 <br>
+                    スーパーで買った野菜とはどうしてこんなに 違いがあるのかとびっくりするほど豊かな大地の香りです。<br>
+                    葉っぱまでシャキシャキのにんじんは特に子供がお気に入り。<br>
+                    ゆでただけでも、野菜の甘みが優しく広がり、<br>本来の味がたのしめます。
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="p-images__voice">
+                <figure>
+                  <div class="l-figure__voice--img">
+                    <img src="images/voice2.png" alt="安心できる品質に大満足">
+                  </div>
+                  <div class="l-figure__voice--h4">
+                    <h4 class="u-NoteSansJP-18-24-bold">安心できる品質に大満足</h4>
+                  </div>
+                  <div class="l-figure__voice--h5">
+                    <h5 class="u-NoteSansJP-16-18-normal">千葉県O様</h5>
+                  </div>
+                  <figcaption class="u-NoteSansJP-16">
+                    無農薬・無化学肥料にこだわった生産者から 送られてくるため、とても安心して毎日食卓に出せるのがうれしいです。 <br>
+                    小さな子供や働き盛りの夫など、健康に気を遣って食から体づくりをしたい我が家には、もう手放せない野菜となっています。
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="p-images__voice">
+                <figure>
+                  <div class="l-figure__voice--img">
+                    <img src="images/voice3.png" alt="旬の野菜が食べられる豊かさ">
+                  </div>
+                  <div class="l-figure__voice--h4">
+                    <h4 class="u-NoteSansJP-18-24-bold">旬の野菜が食べられる豊かさ</h4>
+                  </div>
+                  <div class="l-figure__voice--h5">
+                    <h5 class="u-NoteSansJP-16-18-normal">東京都M様</h5>
+                  </div>
+                  <figcaption class="u-NoteSansJP-16">
+                    鮮度にこだわる「スグ食べ」だからこそ、旬になった野菜を「今だ！」と送ってきてくれるので、食卓に並ぶ野菜は常に旬の食材です。 <br>
+                    一カ所の農家さんからではなく複数の農家から選べるので、地域によっての旬の違いも楽しめます。 たまに、スーパーに並ばないような珍しい野菜がまざるのも、わくわくしますね。
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-sectioin__faq">
+        <div class="l-section__faq">
+          <h2 class="u-brown u-NoteSansJP-24-48-bold">よくある質問</h2>
+          <div class="p-wrapper__questions">
+            <div class="p-wrapper__question">
+              <div class="p-wrapper__question--h3">
+                <h3><span class="u-strong-red u-NoteSansJP-24-48-bold">Q.</span><span class="u-NoteSansJP-18-24-bold">&nbsp;産地直送のサービスって<br class="u-sponly"><span class="p-description__faq--indent">よく見かけるけど何が違うの？</span></span></h3>
+              </div>
+              <div class="p-wrapper__question--h4">
+                <h4><span class="u-green u-NoteSansJP-24-48-bold">A.</span><span class="u-NoteSansJP-18-24-bold">&nbsp;鮮度が抜群に違います。</span></h4>
+              </div>
+              <div class="p-wrapper__questioin--p">
+                <p class="u-NoteSansJP-16-18-normal">通常の産直サービスは、一度倉庫などに野菜を集め、そこで箱詰め作業をして配送しています。<br>
+                  この仕組みでは、お客さまが商品を受け取る時には収穫してから3,4日が経過しています。 <br>
+                  スグ食べでは、箱詰め作業を農家さんにお願いすることにより、<span class="u-red">最短で収穫当日に商品を受け取ることができます</span>。</p>
+              </div>
+            </div>
+            <div class="p-wrapper__question">
+              <div class="p-wrapper__question--h3">
+                <h3><span class="u-strong-red u-NoteSansJP-24-48-bold">Q.</span><span class="u-NoteSansJP-18-24-bold">&nbsp;どんな農家さんが登録してるの？</span></h3>
+              </div>
+              <div class="p-wrapper__question--h4">
+                <h4><span class="u-green u-NoteSansJP-24-48-bold">A.</span><span class="u-NoteSansJP-18-24-bold">&nbsp;無農薬にこだわる、オーガニック<br class="u-sponly"><span class="p-description__faq--indent">農家さんのみが登録しています。</span></span></h4>
+              </div>
+              <div class="p-wrapper__questioin--p">
+                <p class="u-NoteSansJP-16-18-normal">有機栽培や自然栽培などの環境に配慮した農法で生産するには、通常以上に費用も手間もかかります。<br>
+                  そんな中でも、「安心な野 菜を食べて欲しい」という強い思いを持って、こだわって野菜を作っている農家さんがいます。<br>
+                  そういった、<span class="u-red">厳選されたオーガニック農家さんのみが登録しているため、安心してお買い物を楽しんでいただけます</span>。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="p-section__trial">
+        <div class="l-section__trial">
+          <div class="l-section__trial--atention">
+            <span class="u-yellow">自信があるから、是非食べてもらいたい</span>
+          </div>
+          <h2 class="u-NoteSansJP-24-48-bold">１回限り！少量お試しセット</h2>
+          <div class="p-vegetables">
+            <div class="l-vegetables">
+              <div class="l-vegetable">          
+                <h3 class="u-NoteSansJP-16-24-bold p-vegetables__h3">
+                  【ベジックス】旬＊お試し野菜セット(6品目)
+                </h3>
+                <div class="l-vegetables__description">
+                  <span class="u-NoteSansJP-18-24-bold">￥1,280</span
+                  ><span class="u-NoteSansJP-12-16"
+                    >（税込 / 送料別）<br
+                  ></span>
+                  <span class="u-NoteSansJP-12-16"
+                    >生産者：千葉県松戸市　ベジックス</span
+                  >
+                </div>
+                <picture>
+                  <source srcset="images/vegetable1_pc.png" media="(min-width: 960px)">
+                    <img
+                      src="images/vegetable1.png"
+                      alt="野菜1"
+                      class="c-image p-vegetable__img"
+                    >
+                </picture>
+              </div>
+              <div class="l-vegetable">          
+                <h3 class="u-NoteSansJP-16-24-bold p-vegetables__h3">
+                  【くちぶえ農園】旬＊お試し野菜セット(6品目)
+                </h3>
+                <div class="l-vegetables__description">
+                  <span class="u-NoteSansJP-18-24-bold">￥1,280</span
+                  ><span class="u-NoteSansJP-12-16"
+                    >（税込 / 送料別）<br
+                  ></span>
+                  <span class="u-NoteSansJP-12-16"
+                    >生産者：長野県 飯田市　くちぶえ農園</span
+                  >
+                </div>
+                <picture>
+                  <source srcset="images/vegetable2_pc.png" media="(min-width: 960px)">
+                  <img
+                  src="images/vegetable2.png"
+                  alt="野菜2"
+                  class="c-image p-vegetable__img"
+                >
+                </picture>
+              </div>
+          </div>
+          <div class="c-attention">
+            <p>初回限定</p>
+            <button class="c-button__trial u-NoteSansJP-24">
+              お試しセットを注文
+            </button>
+          </div>
+        </div>
+		  </div>	
+      </section>
+      <!--/main-->
+    </main>
+    <footer class="l-footer">
+      <div class="p-footer">
+        <p>
+          <small>Copyright &copy; 2022 SUGUTABE Inc.</small>
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+    <script type="module" src="js/swiper-app.js"></script>
+  </body>
+</html>

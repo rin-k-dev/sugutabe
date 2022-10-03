@@ -1,0 +1,24 @@
+@use "../foundation/variables";
+
+@mixin swiper() {
+    .swiper {
+        position: relative;
+        width: calc(100vw * 345 / #{variables.$width-origin});
+        height: auto;
+        @media screen and (min-width: #{variables.$break-point}px) {
+            width: calc(100vw * 934 / #{variables.$width-origin-pc});
+        }
+      }
+      .swiper-pagination-bullet {
+        background-color: variables.$brown-color;
+        height: 10px;
+        width: 10px;
+      }
+      .swiper-button-prev, .swiper-button-next {
+        display: none;
+      }
+      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        position: absolute;
+        bottom: -32px;
+      }
+}

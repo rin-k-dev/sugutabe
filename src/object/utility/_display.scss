@@ -1,0 +1,15 @@
+@use "../../foundation/variables";
+
+@mixin display() {
+  .u-pconly {
+    display: none;
+  }
+  @media screen and (min-width: #{variables.$break-point}px) {
+    .u-sponly {
+      display: none;
+    }
+    .u-pconly {
+      display: inline;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@use 'reset';
+@use 'base';
+
+@mixin foundation() {
+    @include reset.reset();
+    @include base.base();
+}

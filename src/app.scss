@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@use 'foundation/foundation';
+@use 'layout/layout';
+@use 'object/component/component';
+@use 'object/project/project';
+@use 'object/utility/utility';
+@use 'library/library';
+
+@include foundation.foundation();
+@include layout.layout();
+@include component.component();
+@include project.project();
+@include utility.utility();
+@include library.library();

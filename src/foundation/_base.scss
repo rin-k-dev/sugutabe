@@ -1,0 +1,32 @@
+@use 'variables';
+@mixin base() {
+    @font-face {
+        font-family: Harenosora;
+            src: url('../fonts/Harenosora.otf') format('opentype');
+            font-weight: normal;
+    }
+    @font-face {
+        font-family: NoteSansJP;
+            src: url('../fonts/Noto_Sans_JP/NotoSansJP-Bold.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+    }
+    @font-face {
+        font-family: NoteSansJP;
+            src: url('../fonts/Noto_Sans_JP/NotoSansJP-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+    }
+    html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+        min-width: 375px;
+        margin: 0 auto;
+    }
+    body {
+        font-family: NoteSansJP, sans-serif;
+        font-weight: normal;
+        color: variables.$base-color;
+        font-size: 1.6rem;
+    }
+}

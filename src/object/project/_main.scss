@@ -1,0 +1,217 @@
+@use "../../foundation/variables";
+
+@mixin main() {
+  .p-section__about {
+    background: url("../images/bg1.jpg") repeat;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      text-align: center;
+    }
+    h1 {
+      display: none;
+    }
+  }
+  .p-section__trial {
+    background: variables.$deep-green-color;
+    color: variables.$white-color;
+    .p-vegetables {
+      .p-vegetable__img {
+        width: calc(100vw * 300 / #{variables.$width-origin});
+        height: calc(100vw * 300 / #{variables.$width-origin});
+        border: 1px #{variables.$border-color} solid;
+        border-radius: 20px;
+        @media screen and (min-width: #{variables.$break-point}px) {
+          width: calc(100vw * 1155 / #{variables.$width-origin-pc});
+        }
+      }
+      .p-vegetable__img {
+        width: calc(100vw * 300 / #{variables.$width-origin});
+        height: calc(100vw * 300 / #{variables.$width-origin});
+        display: block;
+        margin: 0 auto;
+        @media screen and (min-width: #{variables.$break-point}px) {
+          width: calc(100vw * 500 / #{variables.$width-origin-pc});
+          height: calc(100vw * 300 / #{variables.$width-origin-pc});
+          margin: 0;
+        }
+      }
+    }
+  }
+  .p-section__quality {
+    background: url("../images/bg1.jpg") repeat;
+    .p-paragraph__quality {
+      width: calc(100vw * 345 / #{variables.$width-origin});
+      margin-left: auto;
+      margin-right: auto;
+      @media screen and (min-width: #{variables.$break-point}px) {
+        width: calc(100vw * 1020 / #{variables.$width-origin-pc});
+        max-width: 1020px;
+      }
+    }
+    .p-section__quality--picture {
+      text-align: center;
+    }
+  }
+  .p-section__organicfarmer {
+    .p-paragraph__organicfarmer {
+      width: calc(100vw * 345 / #{variables.$width-origin});
+      margin-left: auto;
+      margin-right: auto;
+      @media screen and (min-width: #{variables.$break-point}px) {
+        width: calc(100vw * 777 / #{variables.$width-origin-pc});
+        max-width: 777px;
+      }
+    }
+    .p-figure__plantcultivationmethod {
+      width: calc(100vw * 340 / #{variables.$width-origin});
+      margin-left: auto;
+      margin-right: auto;
+      @media screen and (min-width: #{variables.$break-point}px) {
+        width: calc(100vw * 820 / #{variables.$width-origin-pc});
+        display: flex;
+        justify-content: center;
+        gap: calc(100vw * 50 / #{variables.$width-origin-pc});
+      }
+      figure {
+        margin-bottom: 30px;
+        .p-figure__img {
+          display: flex;
+          justify-content: center;
+          gap: calc(100vw * 20 / #{variables.$width-origin});
+          @media screen and (min-width: #{variables.$break-point}px) {
+            gap: calc(100vw * 80 / #{variables.$width-origin-pc});
+          }
+        }
+        img {
+          width: calc(100vw * 100 / #{variables.$width-origin});
+          height: calc(100vw * 100 / #{variables.$width-origin});
+          margin-bottom: 8px;
+          @media screen and (min-width: #{variables.$break-point}px) {
+            width: calc(100vw * 100 / #{variables.$width-origin-pc});
+            height: calc(100vw * 100 / #{variables.$width-origin-pc});
+            margin-bottom: 10px;
+          }
+        }
+        figcaption {
+          text-align: center;
+        }
+      }
+      .p-figure__items {
+        display: flex;
+        justify-content: center;
+        gap: calc(100vw * 20 / #{variables.$width-origin});
+        @media screen and (min-width: #{variables.$break-point}px) {
+          flex-wrap: nowrap;
+          gap: calc(100vw * 30 / #{variables.$width-origin-pc});
+        }
+        .p-figure__1 {
+          figcaption {
+            @media screen and (min-width: #{variables.$break-point}px) {
+              width: 160px;
+            }
+          }
+        }
+        .p-figure__2-3 {
+          figcaption {
+            @media screen and (min-width: #{variables.$break-point}px) {
+              width: 336px;
+            }
+          }
+        }
+        .p-figure__4-5 {
+          figcaption {
+            @media screen and (min-width: #{variables.$break-point}px) {
+              width: 288px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .p-section__farmers {
+    margin-bottom: 30px;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      margin-bottom: 60px;
+    }
+    .p-descriptions__farmers {
+      position: relative;
+      .p-picutere__farmer {
+        img {
+          border-radius: 20px;
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .p-section__voice {
+    margin-top: 60px;
+    padding-bottom: 30px;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      margin-top: 0;
+      padding-bottom: 60px;
+    }
+    .p-vwrapper__voices {
+      width: 100%;
+    }
+  }
+  .p-sectioin__faq {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: variables.$background-color-1;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .p-wrapper__questions {
+      width: calc(100vw * 345 / #{variables.$width-origin});
+      margin-left: auto;
+      margin-right: auto;
+      @media screen and (min-width: #{variables.$break-point}px) {
+        width: calc(100vw * 788 / #{variables.$width-origin-pc});
+      }
+      .p-wrapper__question:not(:last-child) {
+        border-bottom: 3px dashed variables.$white-color;
+        padding-bottom: 20px;
+        @media screen and (min-width: #{variables.$break-point}px) {
+          border-bottom: none;
+          padding-bottom: 10px;
+        }
+      }
+      .p-wrapper__question:not(:first-child) {
+        padding-top: 20px;
+        @media screen and (min-width: #{variables.$break-point}px) {
+          padding-top: 10px;
+        }
+      }
+      .p-wrapper__question--h3 {
+        h3 {
+          text-align: left;
+        }
+      }
+      .p-wrapper__question--h4 {
+        h4 {
+          text-align: left;
+        }
+      }
+      .p-wrapper__questioin--p {
+        width: 345px;
+        @media screen and (min-width: #{variables.$break-point}px) {
+          width: 790px;
+        }
+        p {
+          text-align: left;
+          @media screen and (min-width: #{variables.$break-point}px) {
+            width: calc(100vw * 788 / #{variables.$width-origin-pc});
+          }
+        }
+      }
+      .p-description__faq--indent {
+        display: inline-block;
+        text-indent: 2.8rem;
+        @media screen and (min-width: #{variables.$break-point}px) {
+          text-indent: 0;
+        }
+      }
+    }
+  }
+}
