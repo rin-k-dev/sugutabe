@@ -734,6 +734,7 @@ body {
 }
 
 .l-nav.panelactive .p-nav {
+  opacity: 1;
   background-color: #52A530;
   color: #fff;
   font-size: 1.6rem;
@@ -754,6 +755,9 @@ body {
   padding-left: 15px;
 }
 
+.p-nav {
+  opacity: 0;
+}
 .p-nav li {
   width: 92%;
   border-bottom: 1px solid #fff;

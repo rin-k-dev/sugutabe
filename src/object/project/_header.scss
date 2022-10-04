@@ -83,6 +83,7 @@
   }
   .l-nav.panelactive {
     .p-nav {
+      opacity: 1;
       background-color: variables.$navigation-bg-color;
       color: variables.$white-color;
       font-size: 1.6rem;
@@ -103,10 +104,13 @@
       padding-left: 15px;
     }
   }
-  .p-nav li {
-    width: 92%;
-    border-bottom: 1px solid variables.$white-color;
-    margin-bottom: 8px;
+  .p-nav {
+    opacity: 0;
+    li {
+      width: 92%;
+      border-bottom: 1px solid variables.$white-color;
+      margin-bottom: 8px;
+    }
   }
   .p-text__strong-color {
     color: variables.$text-strong-red;
