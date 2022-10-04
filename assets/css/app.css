@@ -223,6 +223,7 @@ body {
   .l-sectioin__about {
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
   }
 }
 .l-sectioin__about .l-wrapper__section--about {
