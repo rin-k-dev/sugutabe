@@ -130,6 +130,11 @@
     @media screen and (min-width: #{variables.$break-point}px) {
       margin-bottom: 60px;
     }
+    .p-contents__farmers {
+      @media screen and (min-width: #{variables.$break-point}px) {
+        padding-top: 20px;
+      }
+    }
     .p-descriptions__farmers {
       position: relative;
       .p-picutere__farmer {

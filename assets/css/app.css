@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***
     The new CSS reset - version 1.7.3 (last updated 7.8.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -490,6 +491,7 @@ body {
 @media screen and (min-width: 960px) {
   .l-section__voice .l-section__voice--h2 {
     padding-bottom: 60px;
+    padding-top: 20px;
   }
 }
 .l-section__voice .l-section__voice--h2 h2 {
@@ -780,6 +782,23 @@ body {
     text-align: center;
   }
 }
+.p-header.HeightMin {
+  position: fixed;
+  z-index: 999; /*最前面へ*/
+  height: 60px;
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-170px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .p-section__about {
   background: url("../images/bg1.jpg") repeat;
 }
@@ -922,6 +941,11 @@ body {
 @media screen and (min-width: 960px) {
   .p-section__farmers {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .p-section__farmers .p-contents__farmers {
+    padding-top: 20px;
   }
 }
 .p-section__farmers .p-descriptions__farmers {
