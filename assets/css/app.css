@@ -873,7 +873,7 @@ body {
 }
 @media screen and (min-width: 960px) {
   .p-section__organicfarmer .p-figure__plantcultivationmethod figure .p-figure__img {
-    gap: calc(100vw * 80 / 1280);
+    gap: 80px;
   }
 }
 .p-section__organicfarmer .p-figure__plantcultivationmethod figure img {
