@@ -2,6 +2,9 @@
 
 @mixin button() {
   .c-button__trial {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
     color: variables.$white-color;
     width: 345px;
     height: 80px;
@@ -13,5 +16,10 @@
       #295318 100%,
       #000 100%
     );
+    padding-top: 20px;
+    padding-bottom: 23px;
+    a {
+      cursor: pointer;
+    }
   }
 }

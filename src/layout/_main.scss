@@ -116,7 +116,7 @@
       padding-bottom: 60px;
     }
     .l-section__trial--atention {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       text-align: center;
       font-size: 1.4rem;
       @media screen and (min-width: #{variables.$break-point}px) {
@@ -161,6 +161,9 @@
     }
     .l-vegetables__description {
       margin-bottom: 50px;
+      p {
+        display: inline;
+      }
     }
   }
   .l-section__quality {

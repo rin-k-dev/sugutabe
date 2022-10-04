@@ -7,15 +7,17 @@
     background-color: variables.$white-color;
     height: 50px;
     width: 100vw;
+    @media screen and (min-width: #{variables.$break-point}px) {
+      height: 80px;
+    }
   }
   .p-header__logo {
     margin-left: calc(100vw * 15 / #{variables.$width-origin});;
     margin-top: 10px;
-    #logo {
-      width: 100%;
-    }
+    width: 100px;
     @media screen and (min-width: #{variables.$break-point}px) {
-      margin-left: calc(100vw * 30 / #{variables.$width-origin-pc});;
+      margin-left: calc(100vw * 30 / #{variables.$width-origin-pc});
+      width: 180px;
     }
   }
   .p-hamburger {
@@ -111,10 +113,13 @@
   }
   @media screen and (min-width: #{variables.$break-point}px) {
     .p-pcnav {
-        min-width: 352px;
+        min-width: 385px;
         ul {
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             margin-right: calc(100vw * 30 / #{variables.$width-origin-pc});
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
             a {
                 cursor: pointer;
                 span {

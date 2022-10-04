@@ -1,37 +1,40 @@
 @use "../../foundation/variables";
 
-
 @mixin attention() {
-    .c-attention {
-        position: relative;
-        color: variables.$attention-color;
-        font-size: 2.4rem;
-        font-weight: bold;
-        font-family: NoteSansJP;
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
-        p:before, p:after {
-            position: relative;
-            display: inline-block;
-            content: '';
-            background: variables.$attention-color;
-            width: 3px;
-            height: 28px;
-            top: .3em;;
-        }
-        p:before {
-            transform: rotate(-35deg);
-            margin-right: 1em;
-        }
-        p:after {
-            transform: rotate(35deg);
-            margin-left: 1em;
-        }
+  .c-attention {
+    position: relative;
+    color: variables.$attention-color;
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-family: NoteSansJP;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    p:before,
+    p:after {
+      position: relative;
+      display: inline-block;
+      content: "";
+      background: variables.$attention-color;
+      width: 3px;
+      height: 28px;
+      top: 0.3em;
     }
-    
-
+    p:before {
+      transform: rotate(-35deg);
+      margin-right: 1em;
+    }
+    p:after {
+      transform: rotate(35deg);
+      margin-left: 1em;
+    }
+    &:hover {
+      opacity: 0.5;
+      cursor: pointer;
+      transition: .3s;
+    }
+  }
 }
