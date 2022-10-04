@@ -486,6 +486,7 @@ body {
 }
 
 .l-section__voice .l-section__voice--h2 {
+  padding-top: 10px;
   padding-bottom: 30px;
 }
 @media screen and (min-width: 960px) {
@@ -798,7 +799,7 @@ body {
 @keyframes DownAnimeSP {
   from {
     opacity: 0;
-    transform: translateY(-1000px);
+    transform: translateY(-500px);
   }
   to {
     opacity: 1;
@@ -958,6 +959,9 @@ body {
   .p-section__farmers {
     margin-bottom: 60px;
   }
+}
+.p-section__farmers .p-contents__farmers {
+  padding-top: 10px;
 }
 @media screen and (min-width: 960px) {
   .p-section__farmers .p-contents__farmers {

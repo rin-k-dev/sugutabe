@@ -131,6 +131,7 @@
       margin-bottom: 60px;
     }
     .p-contents__farmers {
+      padding-top: 10px;
       @media screen and (min-width: #{variables.$break-point}px) {
         padding-top: 20px;
       }

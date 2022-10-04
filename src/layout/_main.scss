@@ -295,6 +295,7 @@
   }
   .l-section__voice {
     .l-section__voice--h2 {
+      padding-top: 10px;
       padding-bottom: 30px;
       @media screen and (min-width: #{variables.$break-point}px) {
         padding-bottom: 60px;
