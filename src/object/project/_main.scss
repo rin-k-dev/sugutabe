@@ -82,12 +82,10 @@
           }
         }
         img {
-          width: calc(100vw * 100 / #{variables.$width-origin});
-          height: calc(100vw * 100 / #{variables.$width-origin});
+          width: 100px;
+          height: 100px;
           margin-bottom: 8px;
           @media screen and (min-width: #{variables.$break-point}px) {
-            width: calc(100vw * 100 / #{variables.$width-origin-pc});
-            height: calc(100vw * 100 / #{variables.$width-origin-pc});
             margin-bottom: 10px;
           }
         }

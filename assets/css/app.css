@@ -876,14 +876,12 @@ body {
   }
 }
 .p-section__organicfarmer .p-figure__plantcultivationmethod figure img {
-  width: calc(100vw * 100 / 375);
-  height: calc(100vw * 100 / 375);
+  width: 100px;
+  height: 100px;
   margin-bottom: 8px;
 }
 @media screen and (min-width: 960px) {
   .p-section__organicfarmer .p-figure__plantcultivationmethod figure img {
-    width: calc(100vw * 100 / 1280);
-    height: calc(100vw * 100 / 1280);
     margin-bottom: 10px;
   }
 }
