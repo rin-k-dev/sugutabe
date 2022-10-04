@@ -786,7 +786,11 @@ body {
   position: fixed;
   z-index: 999; /*最前面へ*/
   height: 60px;
-  animation: DownAnime 0.5s forwards;
+}
+@media screen and (min-width: 960px) {
+  .p-header.HeightMin {
+    animation: DownAnime 0.5s forwards;
+  }
 }
 
 @keyframes DownAnime {
