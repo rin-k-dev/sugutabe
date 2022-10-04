@@ -133,12 +133,25 @@
   .p-header.HeightMin{
     position: fixed;
     z-index: 999;/*最前面へ*/
-    height:60px;
+    height: 50px;
+    animation: DownAnimeSP 0.5s forwards;
     @media screen and (min-width: #{variables.$break-point}px) {
+      height:60px;
       animation: DownAnime 0.5s forwards;
     }
     
   }
+  @keyframes DownAnimeSP{
+    from {
+      opacity: 0;
+    transform: translateY(-350px);
+    }
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }  
+
   @keyframes DownAnime{
     from {
       opacity: 0;
