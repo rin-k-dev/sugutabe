@@ -857,7 +857,7 @@ body {
 }
 @media screen and (min-width: 960px) {
   .p-section__organicfarmer .p-figure__plantcultivationmethod {
-    width: calc(100vw * 820 / 1280);
+    width: 820px;
     display: flex;
     justify-content: center;
     gap: calc(100vw * 50 / 1280);
