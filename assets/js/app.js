@@ -31,7 +31,7 @@ $(window).scroll(function () {
 //リンク先のidまでスムーススクロール
 //※ページ内リンクを行わない場合は不必要なので削除してください
 $('#g-navi li a').click(function () {
-  var headerVal = $("#header").outerHeight(true); //現在のheaderの高さを取得    
+  var headerVal = $(".p-header").outerHeight(true); //現在のheaderの高さを取得    
 
   //ヘッダーが高さの状態を取得してスクロールする範囲を調整する
   var scroll = $(window).scrollTop(); //スクロール
@@ -50,13 +50,13 @@ $('#g-navi li a').click(function () {
 //リンク先のidまでスムーススクロール
 //※ページ内リンクを行わない場合は不必要なので削除してください
 $('#g-sp-navi li a').click(function () {
-  var headerVal = $("#header").outerHeight(true); //現在のheaderの高さを取得    
+  var headerVal = $(".p-header").outerHeight(true); //現在のheaderの高さを取得    
 
   //ヘッダーが高さの状態を取得してスクロールする範囲を調整する
   var scroll = $(window).scrollTop(); //スクロール
   var adjust = 0            //調整の変数
   if(scroll <= headerVal ){     //スクロールとヘッダーの高さを取得
-    adjust = 50;          //スクロール値がヘッダーの高さ以内であれば調整変数を入れる
+    adjust = 0;          //スクロール値がヘッダーの高さ以内であれば調整変数を入れる
   }
   
   var elmHash = $(this).attr('href'); //hrefを取得
